@@ -272,7 +272,7 @@ def _edf_b(period_array, execution_time_array, deadline_array, consumed_energy_r
 def _generator():
     validity = 1
     while(validity<2):
-        period_array, execution_time_array, deadline_array, consumed_energy_rate_array, utilization = _task_generator(20, 20, 1)
+        period_array, execution_time_array, deadline_array, consumed_energy_rate_array, utilization = _task_generator(20, 60, 1)
         validity = len(period_array)
         # if(validity > 1 and validity<3): #2
         # if(validity > 2 and validity<5): #4
